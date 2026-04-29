@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🌍 Earth Alert
+# Earth Alert
 
 ### Real-time Global Natural Disaster Intelligence Platform
 
@@ -13,107 +13,71 @@
 
 *Aggregates live data from NASA, USGS, NOAA and the UN to deliver a real-time view of every major natural disaster on the planet.*
 
-[Features](#-features) · [Tech Stack](#-tech-stack) · [Data Sources](#-data-sources) · [Getting Started](#-getting-started) · [API](#-api-endpoints) · [Screenshots](#-screenshots)
+[Features](#features) · [Tech Stack](#tech-stack) · [Data Sources](#data-sources) · [Getting Started](#getting-started) · [API](#api-endpoints) · [Screenshots](#screenshots)
 
 </div>
 
 ---
 
-## 📸 Screenshots
+## Screenshots
 
 <table>
+  <tr>
+    <td align="center"><strong>Splash Screen</strong></td>
+    <td align="center"><strong>Landing Page</strong></td>
+  </tr>
   <tr>
     <td><img src="screenshots/splash.png" alt="Splash Screen" /></td>
     <td><img src="screenshots/landing-hero.png" alt="Landing Page" /></td>
   </tr>
   <tr>
-    <td align="center"><em>Splash Screen</em></td>
-    <td align="center"><em>Landing Page</em></td>
+    <td align="center"><strong>Dashboard Overview</strong></td>
+    <td align="center"><strong>Event Detail Panel</strong></td>
   </tr>
   <tr>
     <td><img src="screenshots/dashboard.png" alt="Dashboard" /></td>
     <td><img src="screenshots/dashboard-detail.png" alt="Detail Panel" /></td>
   </tr>
   <tr>
-    <td align="center"><em>Dashboard Overview</em></td>
-    <td align="center"><em>Event Detail Panel</em></td>
+    <td align="center"><strong>Analytics Panel</strong></td>
+    <td align="center"><strong>Heatmap Mode</strong></td>
   </tr>
   <tr>
     <td><img src="screenshots/dashboard-analytics.png" alt="Analytics" /></td>
     <td><img src="screenshots/dashboard-heatmap.png" alt="Heatmap" /></td>
   </tr>
   <tr>
-    <td align="center"><em>Analytics Panel</em></td>
-    <td align="center"><em>Heatmap Mode</em></td>
+    <td align="center"><strong>Live News Feed</strong></td>
+    <td align="center"><strong>Light Mode</strong></td>
   </tr>
   <tr>
     <td><img src="screenshots/dashboard-news.png" alt="News Feed" /></td>
     <td><img src="screenshots/dashboard-light.png" alt="Light Mode" /></td>
   </tr>
-  <tr>
-    <td align="center"><em>Live News Feed</em></td>
-    <td align="center"><em>Light Mode</em></td>
-  </tr>
 </table>
 
 ---
 
-## ✨ Features
+## Features
 
-<table>
-  <tr>
-    <td>🌐 <strong>Global Coverage</strong></td>
-    <td>Tracks 10 disaster types across every continent in real time</td>
-  </tr>
-  <tr>
-    <td>⚡ <strong>Real-time Updates</strong></td>
-    <td>WebSocket push updates every 15 minutes from 6 authoritative sources</td>
-  </tr>
-  <tr>
-    <td>🗺️ <strong>Interactive Map</strong></td>
-    <td>Clustered emoji markers, heatmap overlay, satellite/terrain tiles, radius tool</td>
-  </tr>
-  <tr>
-    <td>📊 <strong>Analytics</strong></td>
-    <td>7-day trends, country risk index, disaster correlations, frequency charts</td>
-  </tr>
-  <tr>
-    <td>⚠️ <strong>Predicted Impact</strong></td>
-    <td>Estimated deaths, displaced people and economic loss per event</td>
-  </tr>
-  <tr>
-    <td>👥 <strong>Population at Risk</strong></td>
-    <td>Estimates affected population within 200km of any event</td>
-  </tr>
-  <tr>
-    <td>📰 <strong>Live News Feed</strong></td>
-    <td>Disaster news from BBC World, Al Jazeera and ReliefWeb</td>
-  </tr>
-  <tr>
-    <td>🔔 <strong>Smart Alerts</strong></td>
-    <td>Custom notification rules by type, severity or magnitude</td>
-  </tr>
-  <tr>
-    <td>🌦️ <strong>Weather Overlay</strong></td>
-    <td>Precipitation, wind, temperature and cloud layers via OpenWeatherMap</td>
-  </tr>
-  <tr>
-    <td>📍 <strong>Near Me</strong></td>
-    <td>Browser geolocation to find disasters near your location</td>
-  </tr>
-  <tr>
-    <td>⏱️ <strong>Timeline Scrubber</strong></td>
-    <td>Scrub through event history with play/pause controls</td>
-  </tr>
-  <tr>
-    <td>📤 <strong>Export</strong></td>
-    <td>Download all active events as CSV or JSON</td>
-  </tr>
-</table>
+| Feature | Description |
+|---|---|
+| **Global Coverage** | Tracks 10 disaster types across every continent in real time |
+| **Real-time Updates** | WebSocket push updates every 15 minutes from 6 authoritative sources |
+| **Interactive Map** | Clustered markers, heatmap overlay, satellite/terrain tiles, radius tool |
+| **Analytics** | 7-day trends, country risk index, disaster correlations, frequency charts |
+| **Predicted Impact** | Estimated deaths, displaced people and economic loss per event |
+| **Population at Risk** | Estimates affected population within 200km of any event |
+| **Live News Feed** | Disaster news from BBC World, Al Jazeera and ReliefWeb |
+| **Smart Alerts** | Custom notification rules by type, severity or magnitude |
+| **Weather Overlay** | Precipitation, wind, temperature and cloud layers via OpenWeatherMap |
+| **Near Me** | Browser geolocation to find disasters near your location |
+| **Timeline Scrubber** | Scrub through event history with play/pause controls |
+| **Export** | Download all active events as CSV or JSON |
 
 ---
 
-## 🗂️ Tech Stack
+## Tech Stack
 
 | Layer | Technology |
 |---|---|
@@ -130,7 +94,7 @@
 
 ---
 
-## 📡 Data Sources
+## Data Sources
 
 | Source | Disaster Types | Frequency |
 |---|---|---|
@@ -143,7 +107,7 @@
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -195,30 +159,30 @@ cd client && npm run dev
 
 Open **http://localhost:5173**
 
-> 📖 Interactive API docs available at **http://localhost:3001/docs**
+> Interactive API docs available at **http://localhost:3001/docs**
 
 ---
 
-## 🔑 Environment Variables
+## Environment Variables
 
 ### `server/.env`
 
 | Variable | Description | Required |
 |---|---|---|
-| `NASA_FIRMS_KEY` | NASA FIRMS API key for wildfire satellite data | ✅ |
-| `OWM_API_KEY` | OpenWeatherMap API key for weather tiles | ✅ |
-| `PORT` | Server port (default: 3001) | ❌ |
+| `NASA_FIRMS_KEY` | NASA FIRMS API key for wildfire satellite data | Yes |
+| `OWM_API_KEY` | OpenWeatherMap API key for weather tiles | Yes |
+| `PORT` | Server port (default: 3001) | No |
 
 ### `client/.env`
 
 | Variable | Description | Required |
 |---|---|---|
-| `VITE_OWM_API_KEY` | OpenWeatherMap API key for weather overlay | ✅ |
-| `VITE_API_URL` | Backend URL (default: http://localhost:3001) | ❌ |
+| `VITE_OWM_API_KEY` | OpenWeatherMap API key for weather overlay | Yes |
+| `VITE_API_URL` | Backend URL (default: http://localhost:3001) | No |
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 Earth-Alert/
@@ -253,7 +217,7 @@ Earth-Alert/
 
 ---
 
-## 🌐 API Endpoints
+## API Endpoints
 
 | Method | Endpoint | Description |
 |---|---|---|
@@ -274,7 +238,7 @@ Earth-Alert/
 
 ---
 
-## ⌨️ Keyboard Shortcuts
+## Keyboard Shortcuts
 
 | Key | Action |
 |---|---|
@@ -287,7 +251,7 @@ Earth-Alert/
 
 ---
 
-## 👤 Author
+## Author
 
 <div align="center">
 
@@ -301,12 +265,12 @@ Earth-Alert/
 
 ---
 
-## 📄 License
+## License
 
 This project is licensed under the [MIT License](LICENSE) — feel free to use, modify and distribute.
 
 ---
 
 <div align="center">
-  <sub>Built with ❤️ by <a href="https://github.com/Niharxd">Nihar Ranjan Patra</a></sub>
+  <sub>Built with care by <a href="https://github.com/Niharxd">Nihar Ranjan Patra</a></sub>
 </div>
