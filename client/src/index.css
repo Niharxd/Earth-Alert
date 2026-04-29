@@ -1,0 +1,108 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: #0e0b08;
+  color: #e8ddd0;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+/* Dashboard needs no scroll — landing page does */
+.dashboard {
+  overflow: hidden;
+  height: 100vh;
+}
+
+::-webkit-scrollbar       { width: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #3d2e1e; border-radius: 2px; }
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+@keyframes ringPulse {
+  0%, 100% { transform: scale(1); opacity: 0.3; }
+  50%       { transform: scale(1.15); opacity: 0.1; }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-12px); }
+}
+
+@keyframes loadBar {
+  from { width: 0%; }
+  to   { width: 100%; }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(6px); }
+}
+
+@keyframes shimmer {
+  0%   { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* Flashcard 3D flip */
+[style*='preserve-3d'] * { -webkit-backface-visibility: hidden; backface-visibility: hidden; }
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%       { opacity: 0.5; transform: scale(1.4); }
+}
+
+@keyframes slideIn {
+  from { transform: translateX(100%); opacity: 0; }
+  to   { transform: translateX(0);    opacity: 1; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes markerPulse {
+  0%   { box-shadow: 0 0 0 0 currentColor; }
+  70%  { box-shadow: 0 0 0 8px transparent; }
+  100% { box-shadow: 0 0 0 0 transparent; }
+}
+
+/* Leaflet earthy overrides */
+.leaflet-container { background: #0e0b08 !important; }
+
+.leaflet-popup-content-wrapper {
+  background: #1c1510 !important;
+  border: 1px solid #3d2e1e !important;
+  border-radius: 10px !important;
+  color: #e8ddd0 !important;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.7) !important;
+}
+
+.leaflet-popup-tip { background: #1c1510 !important; }
+
+.leaflet-popup-content {
+  margin: 10px 14px !important;
+  font-family: 'Inter', system-ui, sans-serif !important;
+  font-size: 13px !important;
+  line-height: 1.5 !important;
+  color: #e8ddd0 !important;
+}
+
+.marker-cluster-small,
+.marker-cluster-medium,
+.marker-cluster-large {
+  background: rgba(210, 100, 20, 0.15) !important;
+  border: 2px solid rgba(210, 100, 20, 0.5) !important;
+}
+
+.marker-cluster-small div,
+.marker-cluster-medium div,
+.marker-cluster-large div {
+  background: rgba(210, 100, 20, 0.3) !important;
+  color: #e8ddd0 !important;
+  font-weight: 700 !important;
+  font-size: 12px !important;
+}
