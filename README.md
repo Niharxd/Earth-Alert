@@ -11,6 +11,27 @@ Earth Alert aggregates live data from NASA, USGS, NOAA and the UN to give you a 
 
 ---
 
+## 📸 Screenshots
+
+### Splash Screen
+![Splash Screen](screenshots/splash.png)
+
+### Landing Page
+![Landing Page Hero](screenshots/landing-hero.png)
+![Landing Features](screenshots/landing-features.png)
+![Landing Flashcards](screenshots/landing-flashcards.png)
+
+### Dashboard
+![Dashboard Overview](screenshots/dashboard.png)
+![Map with Markers](screenshots/dashboard-map.png)
+![Detail Panel](screenshots/dashboard-detail.png)
+![Analytics Panel](screenshots/dashboard-analytics.png)
+![News Feed](screenshots/dashboard-news.png)
+![Heatmap Mode](screenshots/dashboard-heatmap.png)
+![Light Mode](screenshots/dashboard-light.png)
+
+---
+
 ## ✨ Features
 
 - **Real-time data** — WebSocket push updates every 15 minutes from 6 live sources
