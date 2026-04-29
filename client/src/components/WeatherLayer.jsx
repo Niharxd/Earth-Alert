@@ -2,7 +2,7 @@ import { useMap } from 'react-leaflet'
 import { useEffect, useRef } from 'react'
 import L from 'leaflet'
 
-const OWM_KEY = '190f03256c8074cf5a37618059acb3aa'
+const OWM_KEY = import.meta.env.VITE_OWM_API_KEY || ''
 
 const LAYERS = {
   precipitation: `https://tile.openweathermap.org/map/precipitation_new/{z}/{x}/{y}.png?appid=${OWM_KEY}`,
